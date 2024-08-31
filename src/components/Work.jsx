@@ -12,7 +12,7 @@ function Work() {
     ]
   return (
     <div className='w-full'>
-        <div className='max-w-screen-xl mx-auto text-center relative'>
+        <div className='max-w-screen-xl mx-auto text-center relative my-9'>
             <h1 className='text-[30vw] font-medium leading-none text-white'>Work</h1>
             <div className='absolute top-0 w-full h-full'>
                 {images.map((item, index)=>(
