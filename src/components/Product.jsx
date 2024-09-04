@@ -1,11 +1,10 @@
 import React from 'react'
 import Button from './Button'
 
-function Product({data}) {
+function Product({data, mover, index}) {
   return (
-    <div className='w-full flex justify-between items-center py-5 px-9'>
-        <h1 className='text-4xl font-semibold'>{data.title}</h1>
-        <video className='w-72 h-full object-center object-cover' src={data.video} autoPlay muted loop></video>
+    <div onMouseEnter={()=>mover(index)} className={`w-full h-[19rem] flex justify-between ${data.bg} items-center px-9 duration-300 ease-in-out`}>
+        <h1 className='w-60 text-4xl font-semibold'>{data.title}</h1>
         <div className='w-1/3'>
             <p className='mb-5'>{data.para}</p>
             <div className='flex items-center justify-start gap-5'>

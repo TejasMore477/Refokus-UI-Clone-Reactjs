@@ -1,10 +1,11 @@
 import React from 'react'
 import { MdArrowRightAlt } from "react-icons/md";
 import Button from './Button';
+import { motion } from "framer-motion"
 
 function Card({data}) {
   return (
-    <div className={`${data.width} bg-zinc-800 p-5 rounded-xl ${data.color && "hover:bg-violet-800"} flex flex-col justify-between duration-200 ease-linear`}>
+    <motion.div whileHover={{}} className={`${data.width} bg-zinc-800 p-5 rounded-xl flex flex-col h-[60vh] ${data.color && "hover:bg-violet-800"} hover:p-[25px] justify-between duration-200 ease-linear`}>
       <div className='w-full'>
         <div className='w-full flex justify-between items-center'>
           <h3>{data.text}</h3>
@@ -26,7 +27,7 @@ function Card({data}) {
        )}
       
       </div>
-    </div>
+    </motion.div>
   )
 }
 
