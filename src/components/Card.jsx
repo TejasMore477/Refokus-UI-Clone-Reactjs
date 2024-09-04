@@ -4,7 +4,7 @@ import Button from './Button';
 
 function Card({data}) {
   return (
-    <div className={`${data.width} bg-zinc-700 p-5 rounded-xl ${data.color && "hover:bg-violet-800"} flex flex-col justify-between`}>
+    <div className={`${data.width} bg-zinc-800 p-5 rounded-xl ${data.color && "hover:bg-violet-800"} flex flex-col justify-between duration-200 ease-linear`}>
       <div className='w-full'>
         <div className='w-full flex justify-between items-center'>
           <h3>{data.text}</h3>
