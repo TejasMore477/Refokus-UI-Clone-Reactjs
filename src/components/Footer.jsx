@@ -8,7 +8,7 @@ function Footer() {
             <h1 className='text-[12rem] font-bold leading-none tracking-tight'>refokus.</h1>
             <div className='flex gap-9 mt-5'>
             {['Privacy', 'PolicyCookie', 'PolicyTerms', 'Webflow Agency'].map((links,index)=>(
-                <a className='text-zinc-400 text-sm font-medium'>{links}</a>
+                <a key={index} className='text-zinc-400 text-sm font-medium'>{links}</a>
             ))}
             </div>
         </div>
