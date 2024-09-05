@@ -3,7 +3,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='lg:max-w-screen-xl lg:mx-auto px-3 flex lg:flex-row flex-col-reverse md:mt-32 xl:gap-20 lg:gap-5 gap-10 md:h-[40vh] sm:h-[60vh] md:pb-5 pb-10'>
+    <div className='lg:max-w-screen-xl lg:mx-auto px-3 flex lg:flex-row flex-col-reverse mt-32 xl:gap-20 lg:gap-5 gap-10 md:h-[40vh] sm:h-[60vh] md:pb-5 pb-10'>
         <div>
             <h1 className='md:text-[12rem] sm:text-[10rem] text-[4rem] font-bold leading-none tracking-tight'>refokus.</h1>
             <div className='flex sm:gap-9 gap-5 mt-5'>
