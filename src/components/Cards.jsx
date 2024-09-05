@@ -22,7 +22,7 @@ function Cards() {
     title:"Start a Project"
   }
   return (
-    <div className='max-w-screen-xl mx-auto rounded-xl flex gap-3 py-32'>
+    <div className='lg:max-w-screen-xl lg:mx-auto sm:px-3 rounded-xl flex md:flex-row sm:flex-col gap-3 md:py-32 sm:py-20 md:h-auto sm:h-[70vh]'>
       <Card data={card1}/>
       <Card data={card2}/>
     </div>

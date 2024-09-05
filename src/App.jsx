@@ -13,7 +13,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 function App (){
   const locomotiveScroll = new LocomotiveScroll();
   return(
-    <div className='w-full text-white bg-zinc-900 font-["Satoshi_Variable"]'>
+    <div className='w-full text-white bg-zinc-900 font-["Satoshi_Variable"] xl:px-16 lg:px-5'>
       <Navbar/>
       <Work />
       <Stripes />

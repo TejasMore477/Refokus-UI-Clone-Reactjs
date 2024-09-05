@@ -13,7 +13,7 @@ function Navbar(){
                     </svg>
                 </div>
 
-                <div className='flex items-center justify-center gap-6 ml-24'>
+                <div className=' md:flex sm:hidden items-center justify-center gap-6 ml-24'>
                 {["Home", "Work", "Culture", "", "News"].map((link, index) => (
                     link.length === 0 ? (
                         <span key={index} className='w-[1px] h-5 bg-zinc-500'></span>
@@ -27,6 +27,8 @@ function Navbar(){
                     )
                 ))}
                 </div>
+
+                
             </div>
             <Button />
 

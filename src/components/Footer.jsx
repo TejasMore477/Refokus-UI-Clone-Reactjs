@@ -3,9 +3,9 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='max-w-screen-xl mx-auto flex gap-20 h-[40vh] pb-5 '>
+    <div className='lg:max-w-screen-xl lg:mx-auto sm:px-3 flex lg:flex-row sm:flex-col-reverse md:mt-32 xl:gap-20 lg:gap-5 sm:gap-10 md:h-[40vh] sm:h-[60vh] md:pb-5 sm:pb-10'>
         <div>
-            <h1 className='text-[12rem] font-bold leading-none tracking-tight'>refokus.</h1>
+            <h1 className='md:text-[12rem] sm:text-[10rem] font-bold leading-none tracking-tight'>refokus.</h1>
             <div className='flex gap-9 mt-5'>
             {['Privacy', 'PolicyCookie', 'PolicyTerms', 'Webflow Agency'].map((links,index)=>(
                 <a key={index} className='text-zinc-400 text-sm font-medium'>{links}</a>
@@ -13,12 +13,12 @@ function Footer() {
             </div>
         </div>
 
-        <div className='flex gap-5 '>
-            <div className='w-1/3'> 
+        <div className='flex gap-5'>
+            <div> 
                 <h2 className='text-sm text-zinc-300 capitalize mb-4'>socials</h2>
                 <div>
                     {["Instagram","Twitter (x?)","LinkedIn"].map((link,index)=>(
-                        <a key={index} href="" className='text-sm text-zinc-600 block mt-2 capitalize hover:text-zinc-400 duration-300 ease-in-out'>{link}</a>
+                        <a key={index} href="" className='text-sm text-zinc-600 block mt-2 capitalize hover:text-zinc-300 duration-300 ease-in-out'>{link}</a>
                     ))}
                 </div>
             </div>
@@ -27,7 +27,7 @@ function Footer() {
                 <h2 className='text-sm text-zinc-300 capitalize mb-4'>sitemap</h2>
                 <div>
                     {["home","work","carier","contact"].map((link,index)=>(
-                        <a key={index} href="" className='text-sm text-zinc-600 block mt-2 capitalize hover:text-zinc-400 duration-300 ease-in-out'>{link}</a>
+                        <a key={index} href="" className='text-sm text-zinc-600 block mt-2 capitalize hover:text-zinc-300 duration-300 ease-in-out'>{link}</a>
                     ))}
                 </div>
             </div>

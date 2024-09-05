@@ -24,7 +24,7 @@ function Products() {
             <Product key={index} data={item} mover={mover} index={index }/>
         ))}
         <div className='absolute w-full h-full pointer-events-none top-0'>
-          <motion.div initial={{y:pose , x:"-50%"}} animate={{y:pose + 'rem'}} transition={{ease:[0.76,0,0.24,1],duration:0.6}} className='absolute w-80 h-[19rem] left-[43.68%] -translate-x-[50%] overflow-hidden'>
+          <motion.div initial={{y:pose , x:"-50%"}} animate={{y:pose + 'rem'}} transition={{ease:[0.76,0,0.24,1],duration:0.6}} className='absolute lg:w-80 md:w-72 h-[19rem] md:left-[43.68%] sm:right-[-23%] -translate-x-[50%] overflow-hidden'>
             {data.map((item, index)=>(
               <motion.div key={index} animate={{y:-pose + 'rem'}}  transition={{ease:[0.76,0,0.24,1],duration:0.5}} className=' w-full h-full'>
                 <video key={index} className='w-80 h-[19rem] object-center object-cover' src={item.video} autoPlay muted loop></video>
