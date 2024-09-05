@@ -3,12 +3,12 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='lg:max-w-screen-xl lg:mx-auto sm:px-3 flex lg:flex-row sm:flex-col-reverse md:mt-32 xl:gap-20 lg:gap-5 sm:gap-10 md:h-[40vh] sm:h-[60vh] md:pb-5 sm:pb-10'>
+    <div className='lg:max-w-screen-xl lg:mx-auto px-3 flex lg:flex-row flex-col-reverse md:mt-32 xl:gap-20 lg:gap-5 gap-10 md:h-[40vh] sm:h-[60vh] md:pb-5 pb-10'>
         <div>
-            <h1 className='md:text-[12rem] sm:text-[10rem] font-bold leading-none tracking-tight'>refokus.</h1>
-            <div className='flex gap-9 mt-5'>
+            <h1 className='md:text-[12rem] sm:text-[10rem] text-[4rem] font-bold leading-none tracking-tight'>refokus.</h1>
+            <div className='flex sm:gap-9 gap-5 mt-5'>
             {['Privacy', 'PolicyCookie', 'PolicyTerms', 'Webflow Agency'].map((links,index)=>(
-                <a key={index} className='text-zinc-400 text-sm font-medium'>{links}</a>
+                <a key={index} className='text-zinc-400 text-xs font-medium'>{links}</a>
             ))}
             </div>
         </div>

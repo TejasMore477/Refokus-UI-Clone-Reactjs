@@ -11,12 +11,12 @@ function Card({data}) {
           <h3>{data.text}</h3>
           <MdArrowRightAlt />
         </div>
-        <h2 className='lg:text-3xl sm:text-2xl font-medium md:mb-40 sm:mb-10 md:mt-5'>{data.heading}</h2>
+        <h2 className='lg:text-3xl text-2xl font-medium md:mb-40 sm:mb-10 md:mt-5'>{data.heading}</h2>
       </div>
       <div>
        {data.started && (
         <>
-          <h1 className='w-full lg:text-8xl sm:text-7xl mt-4 font-medium tracking-tight leading-none mb-3'>{data.title}</h1>
+          <h1 className='w-full lg:text-8xl sm:text-7xl text-4xl mt-4 font-medium tracking-tight leading-none sm:mb-3 mb-5'>{data.title}</h1>
           <Button text={data.button}/> 
         </>
        )}

@@ -12,7 +12,7 @@ function Button({text = "Get Started"}) {
         initial="initial"
         whileHover="hovered"
         href={href}
-        className="relative inline-block overflow-hidden whitespace-nowrap lg:text-sm sm:text-xs font-black uppercase"
+        className="relative inline-block overflow-hidden whitespace-nowrap lg:text-sm text-xs font-black uppercase"
         style={{
           lineHeight: 0.75,
         }}
@@ -62,8 +62,8 @@ function Button({text = "Get Started"}) {
   };
 
   return (
-    <div className='lg:min-w-36 lg:w-36 sm:w-40 lg:px-3 md:px-2 sm:px-3 py-2 text-black bg-zinc-100 rounded-full text-center flex items-center justify-between cursor-pointer'> 
-        <FlipLink className='lg:text-sm sm:text-xs font-semibold inline-block'>{text}</FlipLink>
+    <div className='min-w-32 lg:w-36 sm:w-40 lg:px-3 px-3 md:px-2 sm:px-3 py-2 text-black bg-zinc-100 rounded-full text-center flex items-center justify-between cursor-pointer'> 
+        <FlipLink className='lg:text-sm text-xs font-semibold inline-block'>{text}</FlipLink>
         <BsArrowReturnRight />
     </div>
   )

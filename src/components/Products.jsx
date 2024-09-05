@@ -19,11 +19,11 @@ function Products() {
     }
 
   return (
-    <div className='max-w-screen-xl h-fit mx-auto mt-20 relative'>
+    <div className='max-w-screen-xl h-fit mx-auto sm:mt-20 relative'>
         {data.map((item,index)=>(
             <Product key={index} data={item} mover={mover} index={index }/>
         ))}
-        <div className='absolute w-full h-full pointer-events-none top-0'>
+        <div className='absolute sm:block hidden w-full h-full pointer-events-none top-0'>
           <motion.div initial={{y:pose , x:"-50%"}} animate={{y:pose + 'rem'}} transition={{ease:[0.76,0,0.24,1],duration:0.6}} className='absolute lg:w-80 md:w-72 h-[19rem] md:left-[43.68%] sm:right-[-23%] -translate-x-[50%] overflow-hidden'>
             {data.map((item, index)=>(
               <motion.div key={index} animate={{y:-pose + 'rem'}}  transition={{ease:[0.76,0,0.24,1],duration:0.5}} className=' w-full h-full'>

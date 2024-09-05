@@ -3,7 +3,7 @@ import Button from './Button';
 
 function Navbar(){
     return(
-        <div className='max-w-screen-xl p-3 mx-auto py-6 flex items-center justify-between border-b-[1px] border-zinc-500' >
+        <div className='max-w-screen-xl p-3 mx-auto sm:py-6 py-8 flex items-center justify-between border-b-[1px] border-zinc-500' >
             <div className='nleft flex items-center'>
                 <div className='size-7'>
                     <svg width="100%" height="100%" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,7 +13,7 @@ function Navbar(){
                     </svg>
                 </div>
 
-                <div className=' md:flex sm:hidden items-center justify-center gap-6 ml-24'>
+                <div className=' md:flex hidden items-center justify-center gap-6 ml-24'>
                 {["Home", "Work", "Culture", "", "News"].map((link, index) => (
                     link.length === 0 ? (
                         <span key={index} className='w-[1px] h-5 bg-zinc-500'></span>
