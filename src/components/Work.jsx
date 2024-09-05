@@ -1,15 +1,22 @@
 import React, { useState } from 'react'
 import { motion , useScroll ,useMotionValueEvent} from "framer-motion"
+import image1 from '../assets/images/Brightwave.webp'
+import image2 from '../assets/images/Cula.webp'
+import image3 from '../assets/images/Jungle.webp'
+import image4 from '../assets/images/Silvr.webp'
+import image5 from '../assets/images/Weglot Like Magic.webp'
+import image6 from '../assets/images/Yahoo.webp'
+
 
 function Work() {
 
     const data = [
-        {url:"src/assets/images/Brightwave.webp", top:"50%",left:"50%", isActive:false},
-        {url:"src/assets/images/Cula.webp", top:"53%",left:"48%", isActive:false},
-        {url:"src/assets/images/Jungle.webp", top:"60%",left:"55%", isActive:false},
-        {url:"src/assets/images/Silvr.webp", top:"63%",left:"45%", isActive:false},
-        {url:"src/assets/images/Weglot Like Magic.webp", top:"59%",left:"50%", isActive:false},
-        {url:"src/assets/images/Yahoo.webp", top:"67%",left:"51%", isActive:false},
+        {url:image1, top:"50%",left:"50%", isActive:false},
+        {url:image2, top:"53%",left:"48%", isActive:false},
+        {url:image3, top:"60%",left:"55%", isActive:false},
+        {url:image4, top:"63%",left:"45%", isActive:false},
+        {url:image5, top:"59%",left:"50%", isActive:false},
+        {url:image6, top:"67%",left:"51%", isActive:false},
     ]
 
     const [images,setImages] = useState(data)
